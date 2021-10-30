@@ -42,3 +42,13 @@ The challenge consists of completing as many of the following steps as possible:
 - We are considering as reviewers that your code challenge is code-prod-quality and it will review under this impression.
 - Please initialize the directory with the challenge as a git repo so you can commit new features and we check on your thought process.
 - Please upload the code-challenge to a git-repository and share the access with the reviewers thavt recruitment team indicates. 
+
+
+
+##Oauth2 Security:
+- username : client
+- password : password
+
+- username : user
+- password : secret
+- grant_type : password
