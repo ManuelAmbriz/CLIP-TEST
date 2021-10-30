@@ -1,20 +1,16 @@
 package com.example.clip.model;
 
 import java.math.BigDecimal;
-import java.util.Date;
-import javax.persistence.Basic;
-import javax.persistence.CascadeType;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -33,9 +29,25 @@ public class Payment {
     private long id;
 
     @Column(name = "amount")
+    @JsonProperty("payment")
     private BigDecimal amount;
+    
+    @Column(name = "disbursement")
+    @JsonProperty("disbursement")
+    private BigDecimal disbursement;
 
     @Column(name = "user_id")
+    @JsonProperty("user_id")
     private String userId;
+
+    @Column(name = "user_name")
+    @JsonProperty("user_name")
+    private String userName;
+    
+    @Column(name = "status")
+    @JsonProperty("status")
+    private String status;
+    
+    
 
 }

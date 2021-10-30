@@ -5,6 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class ClipApplication {
+	
+	public static void main(String[] args) {
 
-    public static void main(String[] args) { SpringApplication.run(ClipApplication.class, args);}
+		SpringApplication.run(ClipApplication.class, args);
+
+	}
 }
